@@ -4,7 +4,7 @@ std::vector<std::string> Split(std::string whole, std::string separator) {
     std::vector<std::string> toReturn;
     int prevLoc = 0;
     for (size_t i = 0; i < whole.size(); i++) {
-        if (whole.substr(i, 1) == separator || i == whole.size()-1) {
+        if (whole.substr(i, 1) == separator || i == whole.size()) {
             toReturn.push_back(whole.substr(prevLoc, i-prevLoc));
             prevLoc = i+1;
         }
