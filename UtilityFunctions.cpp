@@ -8,7 +8,7 @@ std::vector<std::string> Split(std::string whole, std::string separator) {
             toReturn.push_back(whole.substr(prevLoc, i-prevLoc));
             prevLoc = i+1;
         } else if (i == whole.size()-1) {
-            toReturn.push_back(whole.substr(prevLoc, whole.size()-i))
+            toReturn.push_back(whole.substr(prevLoc, whole.size()-i));
         }
     }
     return toReturn;
