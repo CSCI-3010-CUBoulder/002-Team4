@@ -7,8 +7,8 @@
 // Each TEST_CASE should test one function
 
 TEST_CASE( "Split function works", "[Split]" ) {
-    std::vector<std::string> t1 = Split("Test Test 123!", " ");
-    std::vector<std::string> a1 = {"Test", "Test", "123!"};
+    std::vector<std::string> t1 = Split("Test Test 123", " ");
+    std::vector<std::string> a1 = {"Test", "Test", "123"};
 
     REQUIRE( t1 == a1 );
 }
