@@ -11,6 +11,20 @@ TEST_CASE( "Split function works", "[Split]" ) {
     std::vector<std::string> a1 = {"Test", "Test", "123"};
 
     REQUIRE( t1 == a1 );
+
+    std::vector<std::string> t2 = Split("Test Test 123", ",");
+    std::vector<std::string> a2 = {"Test Test 123"};
+
+    REQUIRE( t2 == a2 );
+
+    std::vector<std::int> v1 = {2, 8, 11, 0, -2};
+
+    REQUIRE( Sum(v) == 19 );
+
+    std::vector<std::int> v2 = {0};
+
+    REQUIRE( Sum(v) == 0 );
+
 }
 
 // Each SECTION should test one aspect of that functino
