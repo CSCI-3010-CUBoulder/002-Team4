@@ -17,6 +17,10 @@ TEST_CASE( "Split function works", "[Split]" ) {
 
     REQUIRE( t2 == a2 );
 
+}
+
+TEST_CASE( "Sum function works", "[Sum]" ) {
+
     std::vector<int> v1{2, 8, 11, 0, -2};
 
     REQUIRE( Sum(v1) == 19 );
