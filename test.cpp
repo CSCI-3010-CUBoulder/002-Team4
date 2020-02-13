@@ -17,11 +17,11 @@ TEST_CASE( "Split function works", "[Split]" ) {
 
     REQUIRE( t2 == a2 );
 
-    std::vector<std::int> v1 = {2, 8, 11, 0, -2};
+    std::vector<std::int> v1{2, 8, 11, 0, -2};
 
     REQUIRE( Sum(v) == 19 );
 
-    std::vector<std::int> v2 = {0};
+    std::vector<std::int> v2{0};
 
     REQUIRE( Sum(v) == 0 );
 
